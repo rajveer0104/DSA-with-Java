@@ -7,6 +7,8 @@ public class fibo {
         if (n < 2) {
             return n;
         }
-        return fibon(n - 1) + fibon(n - 2);
+        int x=fibon(n - 1) + fibon(n - 2);
+        System.out.println(x);
+        return x;
     }
 }

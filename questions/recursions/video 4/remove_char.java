@@ -43,8 +43,7 @@ return removestring(arr, i + 1, chars);
 }
 
 
-static StringBuilder removeapp_not_apple(String arr, int i, StringBuilder
-chars) {
+static StringBuilder removeapp_not_apple(String arr, int i, StringBuilder chars) {
 String p = "app";
 StringBuilder s = new StringBuilder();
 if (i == arr.length()) {

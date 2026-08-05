@@ -75,10 +75,10 @@ public class first_last_position {
          * System.out.println("f:" + f);
          * System.out.println("g:" + g);
          */
-        if (arr[f] == arr[f + 1]) {
+        while (arr[f] == arr[f + 1]) {
             f++;
         }
-        if (arr[g] == arr[g - 1]) {
+        while (arr[g] == arr[g - 1]) {
             g--;
         }
         System.out.println("first position:" + g + " and last position:" + f);

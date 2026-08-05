@@ -27,8 +27,7 @@ public class subset_remove_duplicate {
                 start = end + 1;
             }
             end = outer.size() - 1;
-            int n = outer.size();
-            for (int j = start; j < n; j++) {
+            for (int j = start; j < outer.size(); j++) {
                 List<Integer> internal = new ArrayList<>(outer.get(j));
                 internal.add(arr[i]);
                 outer.add(internal);
@@ -37,3 +36,9 @@ public class subset_remove_duplicate {
         return outer;
     }
 }
+
+/*
+arr=[1,2,2]
+out=[[],[1],[2],[1,2],[2,2],[1,2,2]]
+in=[]
+*/

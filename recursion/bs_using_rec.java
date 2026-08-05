@@ -21,16 +21,16 @@ public class bs_using_rec {
         System.out.print(bs(arr, x, 0, arr.length - 1));
     }
 
-    static int bs(int[] arr, int x, int s, int e) {
+    static int bs(int[] arr, int tar, int s, int e) {
         if (s > e) {
             return -1;
         }
         int mid = s + (e - s) / 2;
-        if (arr[mid] == x) {
+        if (arr[mid] == tar) {
             return mid;
-        } else if (arr[mid] > x) {
-            return bs(arr, x, s, mid - 1);
+        } else if (arr[mid] > tar) {
+            return bs(arr, tar, s, mid - 1);
         }
-        return bs(arr, x, mid + 1, e);
+        return bs(arr, tar, mid + 1, e);
     }
 }

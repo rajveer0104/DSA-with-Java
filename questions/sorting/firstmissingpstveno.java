@@ -34,7 +34,6 @@ public class firstmissingpstveno {
             if (arr[in] <= 0) {
                 System.out.println("missing element is " + (in + 1));
             }
-
         }
     }
 }

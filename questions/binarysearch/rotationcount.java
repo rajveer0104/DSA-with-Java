@@ -18,11 +18,11 @@ public class rotationcount {
         int y = ele(arr);
         //clockwise
         System.out.println();
-        System.out.println("rotation ="+(y+1));
+        System.out.println("clockwise rotation ="+(y+1));
 
         //anticlockwise
         int r=arr.length-(y+1);
-        System.out.println("rotation ="+r);
+        System.out.println("anticlockwise rotation ="+r);
     }
     static int ele(int[] arr){
         int low=0;

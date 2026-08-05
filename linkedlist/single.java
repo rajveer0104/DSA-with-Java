@@ -7,12 +7,10 @@ package linkedlist;
     private class Node{
         private int data;
         private Node next;
-
         
         public Node(int data){
             this.data=data;
         }
-
     }
     public LL(){
         this.size=0;
@@ -26,7 +24,6 @@ package linkedlist;
         }
         size++;
         }
-
     public void insertLast(int value){
         if(tail==null){
             insertFirst(value);
@@ -57,7 +54,17 @@ package linkedlist;
         n.next=temp.next;
         temp.next=n;
         size++;
-
+    }
+    public void insertRec(int val,int index){
+        Node temp=head;
+        if(index==0){
+            Node n=new Node(val);
+            n.next=temp.next;
+            temp.next=n;
+            return;
+        }
+        temp=temp.next;
+        insertRec(val, index-1);
     }
     public void display(){
         Node temp=head;
@@ -66,7 +73,7 @@ package linkedlist;
             temp=temp.next;
             
         }
-        System.out.println("NULL");
+        System.out.print("NULL");
     }
     public Node getNode(int index){
         Node temp = head;
@@ -75,7 +82,6 @@ package linkedlist;
             
         }
         return temp;
-
     }
     public int deleteFirst(){
         int val=head.data;
@@ -125,10 +131,7 @@ package linkedlist;
     }
     public int getSize(){
         return size;
-    }
-
-
-    
+    } 
 }
 
 
@@ -152,6 +155,7 @@ public class single {
         System.err.println(l.delete(2));
         l.display();
         System.out.println(l.getSize());
-
+        l.insertRec(90,3);
+        l.display();
     }
 }

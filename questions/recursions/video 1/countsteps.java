@@ -7,6 +7,7 @@ public class countsteps {
         int n = sc.nextInt();
         int c = 0;
         System.out.println("steps: " + steps(n, c));
+        sc.close();
     }
 
     static int steps(int n, int c) {

@@ -6,6 +6,13 @@ public class print {
         System.out.println("Hi"+a);
         double p=Math.pow(2, 3);
         System.out.println(p);
+        Character x='a';
+        Character y='b';
+        System.out.println(x.compareTo(y));
+        String s="Hello";
+        String s1="Hz";
+        System.out.println(s1.compareTo(s));
+        System.out.println('z'-'e');
 
 
 

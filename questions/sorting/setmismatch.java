@@ -34,11 +34,13 @@ public class setmismatch {
         }
         int[] ans = new int[c + 1];
         int b = 0;
+        //missing
         for (int idx = 0; idx < arr.length; idx++) {
             if (arr[idx] != idx + 1) {
                 ans[b++] = idx + 1;
             }
         }
+        //Duplicate
         for (int idx = 0; idx < arr.length; idx++) {
             if (arr[idx] != idx + 1) {
                 ans[b++] = arr[idx];

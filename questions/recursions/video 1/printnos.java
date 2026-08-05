@@ -8,7 +8,7 @@ public class printnos {
         System.out.println("n to 1");
         nto1(n);
         System.out.println("1 to n");
-        print1ton(n);
+        oneton(n);
     }
 
     static void nto1(int n) {
@@ -20,13 +20,12 @@ public class printnos {
         nto1(n - 1);
     }
 
-    static void print1ton(int n) {
+    static void oneton(int n) {
         if (n == 1) {
             System.out.println(n);
             return;
         }
-        print1ton(n - 1);
+        oneton(n - 1);
         System.out.println(n);
-
     }
 }

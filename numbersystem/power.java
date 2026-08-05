@@ -16,5 +16,6 @@ public class power {
             power = power >> 1;
         }
         System.out.println("answer:" + ans);
+        sc.close();
     }
 }

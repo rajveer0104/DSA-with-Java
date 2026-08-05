@@ -24,7 +24,7 @@ public class subset {
         char ch = up.charAt(0);
         subset(p + ch, up.substring(1), a);
         subset(p, up.substring(1), a);
-        return a;
+        return a ;
     }
 
     static void subset1(String p, String up) {

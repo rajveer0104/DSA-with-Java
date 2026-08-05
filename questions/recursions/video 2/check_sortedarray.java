@@ -11,6 +11,7 @@ public class check_sortedarray {
             arr[i] = sc.nextInt();
         }
         System.out.println(sorted(arr, 0));
+        sc.close();
     }
 
     static boolean sorted(int[] arr, int i) {

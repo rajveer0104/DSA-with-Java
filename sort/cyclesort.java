@@ -16,11 +16,11 @@ public class cyclesort {
     static void cyclesort(int[] arr) {
         int i = 0;
         while (i < arr.length) {
-            int correct = arr[i] - 1;
-            if (arr[i] != arr[correct]) {
+            int correctIdx = arr[i] - 1;
+            if (arr[i] != arr[correctIdx]) {
                 int t = arr[i];
-                arr[i] = arr[correct];
-                arr[correct] = t;
+                arr[i] = arr[correctIdx];
+                arr[correctIdx] = t;
             } else {
                 i++;
             }
