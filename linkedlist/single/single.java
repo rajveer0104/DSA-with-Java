@@ -1,5 +1,5 @@
-package linkedlist;
- class LL {
+package linkedlist.single;
+class LL {
     private Node head;
     private Node tail;
     private int size;
@@ -55,16 +55,15 @@ package linkedlist;
         temp.next=n;
         size++;
     }
-    public void insertRec(int val,int index){
-        Node temp=head;
-        if(index==0){
-            Node n=new Node(val);
+    public void insertRec(int val,int index,int i,Node temp){
+        if(i==index){
+            Node n =new Node(val);
             n.next=temp.next;
             temp.next=n;
             return;
         }
-        temp=temp.next;
-        insertRec(val, index-1);
+
+        insertRec(val, index, i+1, temp.next);
     }
     public void display(){
         Node temp=head;
@@ -74,7 +73,9 @@ package linkedlist;
             
         }
         System.out.print("NULL");
+        System.out.println();
     }
+
     public Node getNode(int index){
         Node temp = head;
         for (int i = 0; i < index; i++) {
@@ -155,7 +156,7 @@ public class single {
         System.err.println(l.delete(2));
         l.display();
         System.out.println(l.getSize());
-        l.insertRec(90,3);
+        l.insertRec(90,1,1,l.getNode(0));
         l.display();
     }
 }

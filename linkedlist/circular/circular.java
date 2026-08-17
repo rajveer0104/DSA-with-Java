@@ -1,4 +1,7 @@
-package linkedlist;
+package linkedlist.circular;
+
+import linkedlist.single.LL;
+
 class LL {
     private Node head;
     private Node tail;
