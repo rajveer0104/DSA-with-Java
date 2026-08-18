@@ -46,6 +46,12 @@ class custom_queue{
         }
         return data[0];
     }
+    public void display() {
+        for (int i = 0; i < end; i++) {
+            System.out.print(data[i] + " <- ");
+        }
+        System.out.println("END");
+    }
 }
 public class custom {
     public static void main(String[] args) throws Exception{
