@@ -63,6 +63,19 @@ class custom_circular {
 
         return data[start];
     }
+        public void display() {
+        if (isEmpty()) {
+            System.out.println("Empty");
+            return;
+        }
+        int i = start;
+        do {
+            System.out.print(data[i] + " -> ");
+            i++;
+            i %= data.length;
+        } while (i != end);
+        System.out.println("END");
+    }
 }
 class dynamic_queue extends custom_circular{
     public dynamic_queue(){
