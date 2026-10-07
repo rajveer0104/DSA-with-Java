@@ -1,5 +1,7 @@
 package queue;
 
+import java.util.Stack;
+
 class custom_circular {
 
     private static final int DEFAULT_SIZE = 10;
@@ -113,5 +115,7 @@ public class circular {
         System.out.println(q.dequeue());
         System.out.println(q.dequeue());
         System.out.println(q.peek());
+        Stack <Integer> st=new Stack<>();
+        
     }
 }

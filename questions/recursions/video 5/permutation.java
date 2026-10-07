@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class permutation {
     public static void main(String[] args) {
-        String s = "abc";
+        String s = "115";
         permu("", s);
         System.out.println();
         // System.out.println(permu2("", s));
